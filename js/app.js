@@ -35,13 +35,13 @@ countdown();
 let countdownInterval = setInterval(countdown, 1000);
 
 
-const fireworks = new Fireworks(fireworkContainer, {
-    speed: 5,
-    acceleration: 1.06,
-    friction: 1,
-    gravity: 2,
-    particles: 650,
-    explosion: 5
-})
+// const fireworks = new Fireworks(fireworkContainer, {
+//     speed: 5,
+//     acceleration: 1.06,
+//     friction: 1,
+//     gravity: 2,
+//     particles: 650,
+//     explosion: 5
+// })
 
-fireworks.start()
+// fireworks.start()

@@ -10,6 +10,15 @@ body {
     overflow: hidden;
 }
 
+canvas {
+    cursor: crosshair;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
 .fireworks {
     position: fixed;
     left: 0;
