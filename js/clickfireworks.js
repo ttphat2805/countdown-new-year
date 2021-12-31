@@ -5,7 +5,7 @@ window.requestAnimFrame = (function() {
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
         function(callback) {
-            window.setTimeout(callback, 1000 / 60);
+            window.setTimeout(callback, 500);
         };
 })();
 
@@ -25,8 +25,8 @@ var canvas = document.getElementById('canvas'),
     limiterTotal = 5,
     limiterTick = 0,
     // this will time the auto launches of fireworks, one launch per 80 loop ticks
-    timerTotal = 80,
-    timerTick = 0,
+    timerTotal = 40,
+    timerTick = 3,
     mousedown = false,
     // mouse x coordinate,
     mx,
@@ -75,7 +75,7 @@ function Firework(sx, sy, tx, ty) {
     this.angle = Math.atan2(ty - sy, tx - sx);
     this.speed = 5;
     this.acceleration = 1.06;
-    this.brightness = random(50, 70);
+    this.brightness = random(100, 70);
     // circle target indicator radius
     this.targetRadius = 1;
 }
@@ -188,7 +188,7 @@ Particle.prototype.draw = function() {
 // create particle group/explosion
 function createParticles(x, y) {
     // increase the particle count for a bigger explosion, beware of the canvas performance hit with the increased particles though
-    var particleCount = 500;
+    var particleCount = 400;
     while (particleCount--) {
         particles.push(new Particle(x, y));
     }
