@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff
+}
+
+body {
+    overflow: hidden;
+}
+
+.fireworks {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://luxuo.vn/wp-content/uploads/2020/04/5-Saigon-Date-Night-Ideas-feature-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.heading h1 {
+    font-size: 6.2em;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.heading h3 {
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 30px;
+    display: inline-block;
+}
+
+.countdown {
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+span.num {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border: 1px solid #fff;
+    border-radius: .2em;
+    padding-bottom: 0;
+}
+
+span.text {
+    background: rgb(255, 255, 255);
+    font-size: 1em;
+    color: #333;
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    font-weight: 600;
+    border-radius: 0.3em;
+}
