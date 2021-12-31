@@ -90,6 +90,33 @@ span.text {
     border-radius: 0.3em;
 }
 
+.author {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.author p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 3s ease;
+}
+
+.author p span {
+    color: rgb(0, 255, 98);
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     html {
         font-size: 60%;
